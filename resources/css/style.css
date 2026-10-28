@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #131111;
+    background-color: #f1eaea;
+}
+
+header {
+    background-color: #24436e;
+    color: #f3ebeb;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #886b6b;
+    border: 1px solid #f1ebeb;
+}
+
+ul {
+    font-size: 18px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+.tengah {
+    text-align: center;
+}
+
+.tombol {
+    display: inline-block;
+    background-color: #1f3a5f;
+    color: #fcf5f5;
+    font-size: 18px;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.kotak {
+    background-color: #f4eded;
+    border: 1px solid #762a2a;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+footer {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px 20px;
+    background-color: #5d5656;
+    border-radius: 6px;
+}
+
+.tombol-aksi-data{
+    display: flex;
+}
+
+.edit, .hapus {
+    padding: 4px 8px;
+    margin-right: 4px;
+    font-size: medium;
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+}
