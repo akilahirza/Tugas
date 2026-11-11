@@ -8,6 +8,7 @@
 <body>
     <header>
         <h1>Digital Library</h1>
+      <h5>{{ Auth::user()->name }} | {{ Auth::user()->role }}</h5>
     </header>
     <main>
         <section>
@@ -32,11 +33,13 @@
                     </p>
                     <div class="tombol-aksi-data">
                         <button class="edit"><a href="{{ route("form", $data->id_supplier) }}">Edit</a></button>
+                        @if(auth()->check() && auth()->user()->role === 'admin')
                         <form action="{{ route('hapusSupplier', $data->id_supplier) }}" method="POST" style="display: inline-block;">
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="hapus">Hapus</button>
                         </form>
+                        @endif
                     </div>
                 </div>
             @endforeach

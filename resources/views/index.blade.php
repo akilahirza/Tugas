@@ -8,6 +8,7 @@
   <body>
     <header>
       <h1>Digital Library</h1>
+      <h5>{{ Auth::user()->name }} | {{ Auth::user()->role }}</h5>
     </header>
     <main>
       <section>
